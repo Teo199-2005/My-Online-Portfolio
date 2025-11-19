@@ -1855,9 +1855,9 @@
     /* Tablet */
     @media (max-width: 992px) {
         :root {
-            --hero-image-size: 350px;
-            --font-size-hero: 2.25rem;
-            --font-size-xxxl: 1.75rem;
+            --hero-image-size: 300px;
+            --font-size-hero: 2rem;
+            --font-size-xxxl: 1.5rem;
         }
         
         body {
@@ -1868,12 +1868,12 @@
             flex-direction: column;
             text-align: center;
             min-height: auto;
-            padding: var(--space-xl) 0;
+            padding: 80px 0 var(--space-xl) 0;
         }
         
         .hero-content {
             margin-left: 0 !important;
-            margin-bottom: var(--space-xl);
+            margin-bottom: var(--space-lg);
             max-width: 100%;
             text-align: center;
         }
@@ -1894,26 +1894,31 @@
             transform: none;
             flex-direction: row;
             justify-content: center;
-            height: 60px;
+            height: 50px;
             width: 100%;
-            background: rgba(26, 26, 26, 0.95);
-            padding: 8px 16px;
+            background: rgba(26, 26, 26, 0.98);
+            padding: 4px 8px;
             border-radius: 0;
-            border-bottom: 1px solid rgba(255, 107, 53, 0.3);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.3);
             backdrop-filter: blur(15px);
             z-index: 1000;
         }
         
         .nav-item a {
-            min-width: 60px;
-            padding: 8px 12px;
+            min-width: 50px;
+            padding: 6px 8px;
             flex-direction: row;
-            gap: 6px;
-            border-radius: 20px;
+            gap: 4px;
+            border-radius: 15px;
+            font-size: 10px;
         }
         
         .nav-text {
-            font-size: 11px;
+            font-size: 9px;
+        }
+        
+        .main-content {
+            padding-top: 60px;
         }
         
         .services-grid {
@@ -1921,7 +1926,7 @@
         }
         
         .tech-container {
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(4, 1fr);
         }
         
         .projects-slider {
@@ -1929,7 +1934,8 @@
         }
         
         .project-card {
-            min-width: 350px;
+            min-width: 280px;
+            height: 250px;
         }
         
         .modal-body {
@@ -1953,43 +1959,46 @@
     /* Mobile Large */
     @media (max-width: 768px) {
         :root {
-            --hero-image-size: 280px;
-            --font-size-hero: 2rem;
-            --font-size-xxxl: 1.5rem;
-            --font-size-xxl: 1.25rem;
-            --font-size-xl: 1.125rem;
-            --font-size-lg: 1rem;
+            --hero-image-size: 250px;
+            --font-size-hero: 1.75rem;
+            --font-size-xxxl: 1.25rem;
+            --font-size-xxl: 1.125rem;
+            --font-size-xl: 1rem;
+            --font-size-lg: 0.95rem;
         }
         
         .main-content {
-            padding: 70px var(--space-sm) var(--space-md) var(--space-sm);
+            padding: 60px var(--space-sm) var(--space-md) var(--space-sm);
         }
         
         .container {
-            padding: var(--space-md);
-            margin-bottom: var(--space-md);
+            padding: var(--space-sm);
+            margin-bottom: var(--space-sm);
         }
         
         .hero {
-            padding: var(--space-lg) 0;
+            padding: var(--space-md) 0;
         }
         
         .services-grid {
             grid-template-columns: 1fr;
+            gap: var(--space-sm);
         }
         
         .service-card {
             max-width: 100%;
             height: auto;
+            padding: var(--space-sm);
         }
         
         .tech-container {
             grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-sm);
         }
         
         .project-card {
-            min-width: 300px;
-            height: 280px;
+            min-width: 260px;
+            height: 220px;
         }
         
         .skills ul {
@@ -2001,55 +2010,68 @@
         }
         
         .floating-tech {
-            font-size: 3rem !important;
+            font-size: 2.5rem !important;
+        }
+        
+        .vertical-nav {
+            height: 45px;
+            padding: 3px 6px;
         }
         
         .nav-item a {
-            min-width: 50px;
-            padding: 6px 8px;
+            min-width: 45px;
+            padding: 5px 6px;
+            font-size: 9px;
         }
         
         .nav-text {
-            font-size: 10px;
+            font-size: 8px;
         }
         
         .nav-item a i {
-            font-size: 12px;
+            font-size: 10px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
         }
     }
     
     /* Mobile Small */
     @media (max-width: 576px) {
         :root {
-            --hero-image-size: 250px;
-            --font-size-hero: 1.75rem;
-            --font-size-xxxl: 1.375rem;
+            --hero-image-size: 200px;
+            --font-size-hero: 1.5rem;
+            --font-size-xxxl: 1.125rem;
         }
         
         .main-content {
-            padding: var(--space-sm);
+            padding: 55px var(--space-xs) var(--space-sm) var(--space-xs);
         }
         
         .container {
-            padding: var(--space-sm);
+            padding: var(--space-xs);
+            margin-bottom: var(--space-xs);
         }
         
         .hero-content {
-            padding: 0 var(--space-sm);
+            padding: 0;
             text-align: center;
         }
         
         .tech-container, .future-tech-container {
             grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-xs);
         }
         
         .project-card {
-            min-width: 280px;
-            height: 250px;
+            min-width: 240px;
+            height: 200px;
         }
         
         .stats-grid {
             grid-template-columns: 1fr;
+            gap: var(--space-sm);
         }
         
         .contact-methods {
@@ -2060,22 +2082,32 @@
             display: none;
         }
         
+        .vertical-nav {
+            height: 40px;
+            padding: 2px 4px;
+        }
+        
         .nav-item a {
-            min-width: 45px;
-            padding: 6px;
+            min-width: 40px;
+            padding: 4px 5px;
+            font-size: 8px;
         }
         
         .nav-text {
+            font-size: 7px;
+        }
+        
+        .nav-item a i {
             font-size: 9px;
         }
         
         .modal-content {
-            margin: 1rem auto;
-            padding: var(--space-md);
+            margin: 0.5rem auto;
+            padding: var(--space-sm);
         }
         
         .modal-title {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
         }
         
         .gallery-thumbnails {
@@ -2083,16 +2115,20 @@
         }
         
         .thumbnail {
-            width: 80px;
-            height: 60px;
+            width: 70px;
+            height: 50px;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
         }
     }
     
     /* Extra Small Mobile */
     @media (max-width: 480px) {
         :root {
-            --hero-image-size: 220px;
-            --font-size-hero: 1.5rem;
+            --hero-image-size: 180px;
+            --font-size-hero: 1.25rem;
         }
         
         .hero-title {
@@ -2101,15 +2137,34 @@
         
         .tech-container {
             grid-template-columns: repeat(2, 1fr);
-            gap: var(--space-sm);
+            gap: var(--space-xs);
         }
         
         .project-card {
-            min-width: 260px;
+            min-width: 220px;
+            height: 180px;
         }
         
         .vertical-nav {
-            gap: 5px;
+            gap: 2px;
+            height: 35px;
+        }
+        
+        .nav-item a {
+            min-width: 35px;
+            padding: 3px 4px;
+        }
+        
+        .nav-text {
+            font-size: 6px;
+        }
+        
+        .nav-item a i {
+            font-size: 8px;
+        }
+        
+        .stat-number {
+            font-size: 1.75rem;
         }
     }
 
